@@ -4,6 +4,11 @@ const Client = require('./client/Client');
 const config = require('./config.json');
 const {Player} = require('discord-player');
 
+const config = require('./config.json');
+
+...
+client.login(config.token)
+
 const client = new Client();
 client.commands = new Discord.Collection();
 
